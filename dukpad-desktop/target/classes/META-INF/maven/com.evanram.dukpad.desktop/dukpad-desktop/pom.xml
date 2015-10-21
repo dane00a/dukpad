@@ -1,0 +1,95 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+
+  <parent>
+    <groupId>com.evanram.dukpad</groupId>
+    <artifactId>dukpad</artifactId>
+    <version>0.0.1</version>
+  </parent>
+
+  <groupId>com.evanram.dukpad.desktop</groupId>
+  <artifactId>dukpad-desktop</artifactId>
+  <version>1.0.0</version>
+  <packaging>jar</packaging>
+
+  <name>${project.artifactId}-${project.version}</name>
+  <url>http://maven.apache.org</url>
+
+  <properties>
+    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+  </properties>
+  
+  <dependencies>
+    <dependency>
+      <groupId>com.evanram.dukpad.core</groupId>
+      <artifactId>dukpad-core</artifactId>
+      <version>${project.version}</version>
+    </dependency>
+    
+    <dependency>
+      <groupId>org.slf4j</groupId>
+      <artifactId>slf4j-simple</artifactId>
+      <version>1.7.12</version>
+    </dependency>
+    
+    <dependency>
+      <groupId>org.apache.commons</groupId>
+      <artifactId>commons-collections4</artifactId>
+      <version>4.0</version>
+    </dependency>
+    
+    <dependency>
+      <groupId>org.apache.commons</groupId>
+      <artifactId>commons-lang3</artifactId>
+      <version>3.4</version>
+    </dependency>
+    
+    <dependency>
+      <groupId>commons-io</groupId>
+      <artifactId>commons-io</artifactId>
+      <version>2.4</version>
+    </dependency>
+    
+    <dependency>
+      <groupId>com.googlecode.soundlibs</groupId>
+      <artifactId>jorbis</artifactId>
+      <version>0.0.17-2</version>
+    </dependency>
+    
+    <dependency>
+      <groupId>com.googlecode.soundlibs</groupId>
+      <artifactId>tritonus-share</artifactId>
+      <version>0.3.7-2</version>
+    </dependency>
+    
+    <dependency>
+      <groupId>com.googlecode.soundlibs</groupId>
+      <artifactId>vorbisspi</artifactId>
+      <version>1.0.3-1</version>
+    </dependency>
+    
+    <dependency>
+      <groupId>org.fxmisc.richtext</groupId>
+      <artifactId>richtextfx</artifactId>
+      <version>0.6.10</version>
+    </dependency>
+    
+  </dependencies>
+  
+  <build>
+    <pluginManagement>
+      <plugins>
+        <plugin>
+          <groupId>org.apache.maven.plugins</groupId>
+          <artifactId>maven-compiler-plugin</artifactId>
+          <version>3.3</version>
+          <configuration>
+            <source>1.8</source>
+            <target>1.8</target>
+          </configuration>
+        </plugin>
+      </plugins>
+    </pluginManagement>
+  </build>
+</project>
