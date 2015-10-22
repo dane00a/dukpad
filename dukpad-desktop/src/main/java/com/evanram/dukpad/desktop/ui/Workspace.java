@@ -5,7 +5,6 @@ import java.util.Queue;
 
 import javafx.application.Application;
 import javafx.application.Platform;
-import javafx.event.EventHandler;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
@@ -28,12 +27,9 @@ public final class Workspace extends Application {
 		this.stage = stage;
 		JavafxUtils.stage = stage;
 		
-		stage.addEventHandler(WindowEvent.WINDOW_CLOSE_REQUEST, new EventHandler<WindowEvent>() {
-			@Override
-			public void handle(WindowEvent e) {
-				Platform.exit();
-				System.exit(0);
-			}
+		stage.addEventHandler(WindowEvent.WINDOW_CLOSE_REQUEST, e -> {
+			Platform.exit();
+			System.exit(0);
 		});
 
 		Controller.setWorkspace(this);

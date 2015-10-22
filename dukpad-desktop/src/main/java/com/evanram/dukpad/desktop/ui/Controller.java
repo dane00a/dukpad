@@ -123,7 +123,7 @@ public final class Controller implements Initializable {
 			
 			Alert alert = new Alert(AlertType.INFORMATION, 
 					"An application for creating and running JavaScript on the Launchpad.");
-			alert.setHeaderText("LaunchPlay");
+			alert.setHeaderText("Dukpad");
 			alert.showAndWait();
 		});
 	}

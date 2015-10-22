@@ -22,15 +22,7 @@ public final class DesktopMain {
 		try {
 			Workspace.launch(args);
 		} catch (Exception e) {
-			final String error = "Failed to start workspace.";
-
-			log.trace(error, e);
-			e.printStackTrace();
-
-//			JOptionPane.showMessageDialog(null, 
-//					String.format("%s%n%s", error, e.toString()), 
-//					e.toString(), 
-//					JOptionPane.ERROR_MESSAGE);
+			log.error("Failed to start workspace", e);
 		}
 	}
 }
