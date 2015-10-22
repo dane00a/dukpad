@@ -1,4 +1,6 @@
 *.class
+dukpad-core/target/
+dukpad-desktop/target/
 
 #################
 ## Eclipse
